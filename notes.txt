@@ -1,0 +1,7 @@
+-method that may be helpful for grading: print_parsed_graph in parse.py that prints the nodes and their relevant properties (note: decision, leaf and chance may not be completely accurate descriptors, but help simplify the code and there may be overlap where nodes are printed more than once)
+
+-how to run:
+python3 interface.py -df val -iter val -tol val -min inputfile.txt
+where -df -iter -tol and -min are optional flags.
+
+People I collaborated with: None

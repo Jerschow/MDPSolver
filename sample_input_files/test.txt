@@ -1,0 +1,31 @@
+#Ind=5
+# GoInd=10
+# Chi=10
+# Ind : [BusyInd, Quiet]
+# Eat % .75 .25
+# Ind % .8 .2
+# Quiet=10
+# # BusyInd is the decision node when busy, stay and eat or go to Chi
+# BusyInd : [Eat, GoChi]
+# BusyInd % 1
+# Eat : [Slow, Fast]
+# Slow=60
+# Fast=30
+
+# GoChi=5
+# GoChi : [Chi]
+# Office : [Ind, Chi]
+
+# Chi : [BusyChi, Quiet]
+# Chi % .5 .5
+# BusyChi : [Eat, GoInd]
+# BusyChi % 1
+
+# GoInd : [Ind]
+A = 7
+B % .9
+    C : [ B, A]
+    C=-1
+    A % .8
+    A : [B, A]
+    B : [A, C]
