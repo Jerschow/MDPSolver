@@ -7,7 +7,7 @@ List probabilities of chance node:
 nodename % probval1 probval2 ... probvaln
 Listing probabilities of decision node is same as chance but you only list the prob of getting to your desired destination
 List edges:
-nodename: edge1,edge2,...
+nodename: [edge1,edge2,...]
 
 how to run:
 python3 interface.py -df val -iter val -tol val -min inputfile.txt
